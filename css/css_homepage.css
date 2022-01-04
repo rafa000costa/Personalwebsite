@@ -26,19 +26,19 @@ body {
 .menu_sobre {
     margin-top: 1.5%;
     margin-left: 55%;
-    font-size: 15pt;
+    font-size: 13pt;
 }
 
 .menu_proj {
     margin-top: 1.5%;
     margin-left: 4%;
-    font-size: 15pt;
+    font-size: 13pt;
 }
 
 .menu_cont {
     margin-top: 1.5%;
     margin-left: 4%;
-    font-size: 15pt;
+    font-size: 13pt;
 }
 
 .menu > div > a {
@@ -55,7 +55,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(56, 75px);
+    grid-template-rows: repeat(66, 75px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     overflow: scroll;
@@ -78,7 +78,6 @@ body {
 
 #sobre_title {
     grid-area: 11 / 1 / span 2 / span 4;
-    border: 3px solid blue;
 }
 
 #sobre_title:hover {
@@ -94,7 +93,6 @@ body {
 
 #sobre_paragraph {
     grid-area: 14 / 7 / span 3 / span 2;
-    border: 3px solid gold;
 }
 
 
@@ -102,7 +100,6 @@ body {
 
 #projetos {
     grid-area: 19 / 1 / span 1 / span 1;
-    border: 3px solid gold;
 }
 
 .projetos_title {
@@ -114,7 +111,6 @@ body {
 
 #projetos_title {
     grid-area: 20 / 1 / span 2 / span 4;
-    border: 3px solid blue;
 }
 
 .proj_title {
@@ -138,44 +134,44 @@ body {
 /* PROJETO 2 */
 
 #proj2_title {
-    grid-area: 27 / 4 / span 1 / span 2;
+    grid-area: 30 / 4 / span 1 / span 2;
 }
 
 #proj2_img {
-    grid-area: 27 / 2 / span 1 / span 2;
+    grid-area: 30 / 2 / span 1 / span 2;
     z-index: -1;
 }
 
 /* PROJETO 3 */
 
 #proj3_title {
-    grid-area: 34 / 8 / span 1 / span 2;
+    grid-area: 40 / 8 / span 1 / span 2;
 }
 
 #proj3_img {
-    grid-area: 31 / 6 / span 1 / span 2;
+    grid-area: 37 / 6 / span 1 / span 2;
     z-index: -1;
 }
 
 /* PROJETO 4 */
 
 #proj4_title {
-    grid-area: 34 / 2 / span 1 / span 2;
+    grid-area: 44 / 4 / span 1 / span 2;
 }
 
 #proj4_img {
-    grid-area: 35 / 2 / span 1 / span 2;
+    grid-area: 44 / 2 / span 1 / span 2;
     z-index: -1;
 }
 
 /* PROJETO 5 */
 
 #proj5_title {
-    grid-area: 39 / 8 / span 1 / span 2;
+    grid-area: 51 / 5 / span 1 / span 2;
 }
 
 #proj5_img {
-    grid-area: 39 / 6 / span 1 / span 2;
+    grid-area: 51 / 6 / span 1 / span 2;
     z-index: -1;
 }
 
@@ -189,7 +185,7 @@ body {
 }
 
 #mais_projetos {
-    grid-area: 45 / 5 / span 1 / span 2;
+    grid-area: 57 / 5 / span 1 / span 2;
 }
 
 
@@ -203,8 +199,7 @@ body {
 }
 
 #contactos_title {
-    grid-area: 49 / 1 / span 2 / span 4;
-    border: 3px solid blue;
+    grid-area: 60 / 1 / span 2 / span 4;
 }
 
 .contactos {
@@ -216,13 +211,13 @@ body {
 }
 
 #behance {
-    grid-area: 53 / 2 / span 1 / span 1;
+    grid-area: 64 / 2 / span 1 / span 1;
 }
 
 #linkedin {
-    grid-area: 53 / 5 / span 1 / span 1;
+    grid-area: 64 / 5 / span 1 / span 1;
 }
 
 #mail {
-    grid-area: 53 / 8 / span 1 / span 1;
+    grid-area: 64 / 8 / span 1 / span 1;
 }
