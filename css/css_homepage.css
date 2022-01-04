@@ -1,0 +1,228 @@
+body {
+    /*background-color: #ADB6B8;*/
+    /*background-color: #BFC9D2;*/
+    background-color: black;
+}
+
+/* MENU */
+.menu {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.menu_logo {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 20pt;
+}
+
+.menu_sobre {
+    margin-top: 1.5%;
+    margin-left: 55%;
+    font-size: 15pt;
+}
+
+.menu_proj {
+    margin-top: 1.5%;
+    margin-left: 4%;
+    font-size: 15pt;
+}
+
+.menu_cont {
+    margin-top: 1.5%;
+    margin-left: 4%;
+    font-size: 15pt;
+}
+
+.menu > div > a {
+    text-decoration: none;
+    color: white;
+}
+
+.imagem_inicial {
+    opacity: 70%;
+}
+
+/* CONTEÚDO */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(56, 75px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    overflow: scroll;
+    scroll-snap-type: y;
+}
+
+#homepage {
+    grid-area: 1 / 1 / span 9 / span 9;        /*primeiro linha segundo coluna*/
+}
+
+
+/* SOBRE */
+
+.sobre_title {
+    font-family: Poppins, sans-serif;
+    font-size: 90pt;
+    color: white;
+    margin: 0;
+}
+
+#sobre_title {
+    grid-area: 11 / 1 / span 2 / span 4;
+    border: 3px solid blue;
+}
+
+#sobre_title:hover {
+    stroke: 1px solid black;
+}
+
+.sobre_paragraph {
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    color: white;
+}
+
+#sobre_paragraph {
+    grid-area: 14 / 7 / span 3 / span 2;
+    border: 3px solid gold;
+}
+
+
+/* PROJETOS */
+
+#projetos {
+    grid-area: 19 / 1 / span 1 / span 1;
+    border: 3px solid gold;
+}
+
+.projetos_title {
+    font-family: Poppins, sans-serif;
+    font-size: 90pt;
+    color: white;
+    margin: 0;
+}
+
+#projetos_title {
+    grid-area: 20 / 1 / span 2 / span 4;
+    border: 3px solid blue;
+}
+
+.proj_title {
+    font-family: Poppins, sans-serif;
+    font-size: 40pt;
+    color: lightgrey;
+    margin: 0;
+}
+
+/* PROJETO 1 */
+
+#proj1_title {
+    grid-area: 23 / 6 / span 1 / span 2;
+}
+
+#proj1_img {
+    grid-area: 23 / 7 / span 1 / span 2;
+    z-index: -1;
+}
+
+/* PROJETO 2 */
+
+#proj2_title {
+    grid-area: 27 / 4 / span 1 / span 2;
+}
+
+#proj2_img {
+    grid-area: 27 / 2 / span 1 / span 2;
+    z-index: -1;
+}
+
+/* PROJETO 3 */
+
+#proj3_title {
+    grid-area: 34 / 8 / span 1 / span 2;
+}
+
+#proj3_img {
+    grid-area: 31 / 6 / span 1 / span 2;
+    z-index: -1;
+}
+
+/* PROJETO 4 */
+
+#proj4_title {
+    grid-area: 34 / 2 / span 1 / span 2;
+}
+
+#proj4_img {
+    grid-area: 35 / 2 / span 1 / span 2;
+    z-index: -1;
+}
+
+/* PROJETO 5 */
+
+#proj5_title {
+    grid-area: 39 / 8 / span 1 / span 2;
+}
+
+#proj5_img {
+    grid-area: 39 / 6 / span 1 / span 2;
+    z-index: -1;
+}
+
+.mais_projetos {
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 20pt;
+    color: lightgrey;
+    margin: 0;
+    text-decoration: none;
+}
+
+#mais_projetos {
+    grid-area: 45 / 5 / span 1 / span 2;
+}
+
+
+/* CONTACTOS */
+
+.contactos_title {
+    font-family: Poppins, sans-serif;
+    font-size: 90pt;
+    color: white;
+    margin: 0;
+}
+
+#contactos_title {
+    grid-area: 49 / 1 / span 2 / span 4;
+    border: 3px solid blue;
+}
+
+.contactos {
+    font-family: Poppins, sans-serif;
+    font-size: 15pt;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+}
+
+#behance {
+    grid-area: 53 / 2 / span 1 / span 1;
+}
+
+#linkedin {
+    grid-area: 53 / 5 / span 1 / span 1;
+}
+
+#mail {
+    grid-area: 53 / 8 / span 1 / span 1;
+}
