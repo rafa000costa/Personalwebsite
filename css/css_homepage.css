@@ -358,7 +358,7 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(66, 75px);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
@@ -367,7 +367,7 @@ body {
     }
 
     #homepage {
-        grid-area: 1 / 1 / span 9 / span 9;        /*primeiro linha segundo coluna*/
+        grid-area: 1 / 1 / span 9 / span 5;        /*primeiro linha segundo coluna*/
     }
 
 
@@ -607,7 +607,7 @@ body {
     }
 
     #linkedin {
-        grid-area: 64 / 2 / span 1 / span 1;
+        grid-area: 63 / 2 / span 1 / span 1;
     }
 
     .linkedin > a {
@@ -616,7 +616,7 @@ body {
     }
 
     #mail {
-        grid-area: 66 / 2 / span 1 / span 1;
+        grid-area: 64 / 2 / span 1 / span 1;
     }
 
     .mail > a {
