@@ -3,221 +3,624 @@ body {
     /*background-color: #BFC9D2;*/
     background-color: black;
 }
+/* --------- desktop (1440*702) --------- */
+@media only screen and (min-width: 1100px), only screen and (min-device-width: 1100px) {
+    /* MENU */
+    .menu {
+        font-family: Poppins, sans-serif;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        margin-top: -10px;
+        z-index: 1;
+    }
 
-/* MENU */
-.menu {
-    font-family: Poppins, sans-serif;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    height: 10%;
-    margin-top: -10px;
-    z-index: 1;
+    .menu_logo {
+        margin-top: 1%;
+        margin-left: 1%;
+        font-size: 20pt;
+    }
+
+    .menu_sobre {
+        margin-top: 1.5%;
+        margin-left: 55%;
+        font-size: 13pt;
+    }
+
+    .menu_proj {
+        margin-top: 1.5%;
+        margin-left: 4%;
+        font-size: 13pt;
+    }
+
+    .menu_cont {
+        margin-top: 1.5%;
+        margin-left: 4%;
+        font-size: 13pt;
+    }
+
+    .menu > div > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .imagem_inicial {
+        opacity: 70%;
+    }
+
+    /* CONTEÚDO */
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(66, 75px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        overflow: scroll;
+        scroll-snap-type: y;
+    }
+
+    #homepage {
+        grid-area: 1 / 1 / span 9 / span 9;        /*primeiro linha segundo coluna*/
+    }
+
+
+    /* SOBRE */
+
+    .sobre_title {
+        font-family: Poppins, sans-serif;
+        font-size: 90pt;
+        color: white;
+        margin: 0;
+    }
+
+    #sobre_title {
+        grid-area: 11 / 1 / span 2 / span 4;
+    }
+
+    #sobre_title:hover {
+        stroke: 1px solid black;
+    }
+
+    .sobre_paragraph {
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 10pt;
+        color: white;
+    }
+
+    #sobre_paragraph {
+        grid-area: 14 / 7 / span 3 / span 2;
+    }
+
+
+    /* PROJETOS */
+
+    #projetos {
+        grid-area: 19 / 1 / span 1 / span 1;
+    }
+
+    .projetos_title {
+        font-family: Poppins, sans-serif;
+        font-size: 90pt;
+        color: white;
+        margin: 0;
+    }
+
+    #projetos_title {
+        grid-area: 20 / 1 / span 2 / span 4;
+    }
+
+    .proj_title {
+        font-family: Poppins, sans-serif;
+        font-size: 40pt;
+        color: lightgrey;
+        margin: 0;
+    }
+
+    /* PROJETO 1 */
+
+    #proj1_title {
+        grid-area: 23 / 6 / span 1 / span 2;
+    }
+
+    #proj1_img {
+        grid-area: 23 / 7 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj1_img {
+        position: relative;
+    }
+
+    .proj1_overlay {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 0;
+        left: 0;
+        /*background-color: rgba(0, 0, 0, 1);*/
+        background-color: salmon;
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+        opacity: 0;
+    }
+
+    .proj1_overlay:hover {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 1);
+        border: 2px solid red;
+        z-index: 100;
+    }
+
+    /* PROJETO 2 */
+
+    #proj2_title {
+        grid-area: 30 / 4 / span 1 / span 2;
+    }
+
+    #proj2_img {
+        grid-area: 30 / 2 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj2_img {
+        position: relative;
+    }
+
+    .proj2_overlay {
+        position: absolute;
+        width: 500px;
+        height: 375px;
+        top: 0;
+        left: 0;
+        /*background-color: rgba(0, 0, 0, 1);*/
+        background-color: salmon;
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+        opacity: 0;
+    }
+
+    .proj2_overlay:hover {
+        opacity: 1;
+        z-index: 100;
+        border: 2px solid red;
+    }
+
+    /* PROJETO 3 */
+
+    #proj3_title {
+        grid-area: 40 / 8 / span 1 / span 2;
+    }
+
+    #proj3_img {
+        grid-area: 37 / 6 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    /* PROJETO 4 */
+
+    #proj4_title {
+        grid-area: 44 / 4 / span 1 / span 2;
+    }
+
+    #proj4_img {
+        grid-area: 44 / 2 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    /* PROJETO 5 */
+
+    #proj5_title {
+        grid-area: 51 / 5 / span 1 / span 2;
+    }
+
+    #proj5_img {
+        grid-area: 51 / 6 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .mais_projetos {
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 20pt;
+        color: lightgrey;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    #mais_projetos {
+        grid-area: 57 / 5 / span 1 / span 2;
+    }
+
+
+    /* CONTACTOS */
+
+    .contactos_title {
+        font-family: Poppins, sans-serif;
+        font-size: 90pt;
+        color: white;
+        margin: 0;
+    }
+
+    #contactos_title {
+        grid-area: 60 / 1 / span 2 / span 4;
+    }
+
+    .contactos {
+        font-family: Poppins, sans-serif;
+        font-size: 15pt;
+        font-weight: lighter;
+        color: white;
+        margin: 0;
+    }
+
+    #behance {
+        grid-area: 64 / 2 / span 1 / span 1;
+    }
+
+    .behance > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #linkedin {
+        grid-area: 64 / 5 / span 1 / span 1;
+    }
+
+    .linkedin > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #mail {
+        grid-area: 64 / 8 / span 1 / span 1;
+    }
+
+    .mail > a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
-.menu_logo {
-    margin-top: 1%;
-    margin-left: 1%;
-    font-size: 20pt;
+/* --------- tablet(768*702) --------- */
+@media only screen and (max-width: 1100px), only screen and (max-device-width: 1100px) {
 }
 
-.menu_sobre {
-    margin-top: 1.5%;
-    margin-left: 55%;
-    font-size: 13pt;
-}
+/* --------- mobile iphoneX(375*812) --------- */
+@media only screen and (max-device-width: 900px) {
+    /* MENU */
+    .menu {
+        font-family: Poppins, sans-serif;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 8%;
+        margin-top: -10px;
+        z-index: 1;
+    }
 
-.menu_proj {
-    margin-top: 1.5%;
-    margin-left: 4%;
-    font-size: 13pt;
-}
+    .menu_logo {
+        margin-top: 5%;
+        margin-left: 1%;
+        font-size: 15pt;
+    }
 
-.menu_cont {
-    margin-top: 1.5%;
-    margin-left: 4%;
-    font-size: 13pt;
-}
+    .menu_sobre {
+        margin-top: 7%;
+        margin-left: 10%;
+        font-size: 8pt;
+    }
 
-.menu > div > a {
-    text-decoration: none;
-    color: white;
-}
+    .menu_proj {
+        margin-top: 7%;
+        margin-left: 4%;
+        font-size: 8pt;
+    }
 
-.imagem_inicial {
-    opacity: 70%;
-}
+    .menu_cont {
+        margin-top: 7%;
+        margin-left: 4%;
+        font-size: 8pt;
+    }
 
-/* CONTEÚDO */
+    .menu > div > a {
+        text-decoration: none;
+        color: white;
+    }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(66, 75px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    overflow: scroll;
-    scroll-snap-type: y;
-}
+    .imagem_inicial {
+        opacity: 70%;
+        width: 100%;
+        height: 30%;
+    }
 
-#homepage {
-    grid-area: 1 / 1 / span 9 / span 9;        /*primeiro linha segundo coluna*/
-}
+    /* CONTEÚDO */
 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(66, 75px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        overflow: scroll;
+        scroll-snap-type: y;
+    }
 
-/* SOBRE */
-
-.sobre_title {
-    font-family: Poppins, sans-serif;
-    font-size: 90pt;
-    color: white;
-    margin: 0;
-}
-
-#sobre_title {
-    grid-area: 11 / 1 / span 2 / span 4;
-}
-
-#sobre_title:hover {
-    stroke: 1px solid black;
-}
-
-.sobre_paragraph {
-    font-family: Poppins, sans-serif;
-    font-weight: lighter;
-    font-size: 10pt;
-    color: white;
-}
-
-#sobre_paragraph {
-    grid-area: 14 / 7 / span 3 / span 2;
-}
+    #homepage {
+        grid-area: 1 / 1 / span 9 / span 9;        /*primeiro linha segundo coluna*/
+    }
 
 
-/* PROJETOS */
+    /* SOBRE */
 
-#projetos {
-    grid-area: 19 / 1 / span 1 / span 1;
-}
+    .sobre_title {
+        font-family: Poppins, sans-serif;
+        font-size: 70pt;
+        color: white;
+        margin: 0;
+    }
 
-.projetos_title {
-    font-family: Poppins, sans-serif;
-    font-size: 90pt;
-    color: white;
-    margin: 0;
-}
+    #sobre_title {
+        grid-area: 11 / 1 / span 2 / span 4;
+    }
 
-#projetos_title {
-    grid-area: 20 / 1 / span 2 / span 4;
-}
+    #sobre_title:hover {
+        stroke: 1px solid black;
+    }
 
-.proj_title {
-    font-family: Poppins, sans-serif;
-    font-size: 40pt;
-    color: lightgrey;
-    margin: 0;
-}
+    .sobre_paragraph {
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 10pt;
+        color: white;
+    }
 
-/* PROJETO 1 */
-
-#proj1_title {
-    grid-area: 23 / 6 / span 1 / span 2;
-}
-
-#proj1_img {
-    grid-area: 23 / 7 / span 1 / span 2;
-    z-index: -1;
-}
-
-/* PROJETO 2 */
-
-#proj2_title {
-    grid-area: 30 / 4 / span 1 / span 2;
-}
-
-#proj2_img {
-    grid-area: 30 / 2 / span 1 / span 2;
-    z-index: -1;
-}
-
-/* PROJETO 3 */
-
-#proj3_title {
-    grid-area: 40 / 8 / span 1 / span 2;
-}
-
-#proj3_img {
-    grid-area: 37 / 6 / span 1 / span 2;
-    z-index: -1;
-}
-
-/* PROJETO 4 */
-
-#proj4_title {
-    grid-area: 44 / 4 / span 1 / span 2;
-}
-
-#proj4_img {
-    grid-area: 44 / 2 / span 1 / span 2;
-    z-index: -1;
-}
-
-/* PROJETO 5 */
-
-#proj5_title {
-    grid-area: 51 / 5 / span 1 / span 2;
-}
-
-#proj5_img {
-    grid-area: 51 / 6 / span 1 / span 2;
-    z-index: -1;
-}
-
-.mais_projetos {
-    font-family: Poppins, sans-serif;
-    font-weight: lighter;
-    font-size: 20pt;
-    color: lightgrey;
-    margin: 0;
-    text-decoration: none;
-}
-
-#mais_projetos {
-    grid-area: 57 / 5 / span 1 / span 2;
-}
+    #sobre_paragraph {
+        grid-area: 14 / 1 / span 3 / span 5;
+    }
 
 
-/* CONTACTOS */
+    /* PROJETOS */
 
-.contactos_title {
-    font-family: Poppins, sans-serif;
-    font-size: 90pt;
-    color: white;
-    margin: 0;
-}
+    #projetos {
+        grid-area: 19 / 1 / span 1 / span 1;
+    }
 
-#contactos_title {
-    grid-area: 60 / 1 / span 2 / span 4;
-}
+    .projetos_title {
+        font-family: Poppins, sans-serif;
+        font-size: 50pt;
+        color: white;
+        margin: 0;
+    }
 
-.contactos {
-    font-family: Poppins, sans-serif;
-    font-size: 15pt;
-    font-weight: lighter;
-    color: white;
-    margin: 0;
-}
+    #projetos_title {
+        grid-area: 20 / 1 / span 2 / span 4;
+    }
 
-#behance {
-    grid-area: 64 / 2 / span 1 / span 1;
-}
+    .proj_title {
+        font-family: Poppins, sans-serif;
+        font-size: 40pt;
+        color: lightgrey;
+        margin: 0;
+    }
 
-#linkedin {
-    grid-area: 64 / 5 / span 1 / span 1;
-}
+    /* PROJETO 1 */
 
-#mail {
-    grid-area: 64 / 8 / span 1 / span 1;
+    #proj1_title {
+        grid-area: 23 / 1 / span 1 / span 2;
+    }
+
+    #proj1_img {
+        grid-area: 23 / 1 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj1_img {
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+
+    .proj1_overlay {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 0;
+        left: 0;
+        /*background-color: rgba(0, 0, 0, 1);*/
+        background-color: salmon;
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+        opacity: 0;
+    }
+
+    .proj1_overlay:hover {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 1);
+        border: 2px solid red;
+        z-index: 100;
+    }
+
+    /* PROJETO 2 */
+
+    #proj2_title {
+        grid-area: 30 / 1 / span 1 / span 2;
+    }
+
+    #proj2_img {
+        grid-area: 30 / 1 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj2_img {
+        position: relative;
+        width: 200px;
+        height: 137px;
+    }
+
+    .proj2_overlay {
+        position: absolute;
+        width: 500px;
+        height: 375px;
+        top: 0;
+        left: 0;
+        /*background-color: rgba(0, 0, 0, 1);*/
+        background-color: salmon;
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+        opacity: 0;
+    }
+
+    .proj2_overlay:hover {
+        opacity: 1;
+        z-index: 100;
+        border: 2px solid red;
+    }
+
+    /* PROJETO 3 */
+
+    #proj3_title {
+        grid-area: 40 / 1 / span 1 / span 2;
+    }
+
+    #proj3_img {
+        grid-area: 37 / 1 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj3_img {
+        position: relative;
+        width: 250px;
+        height: 300px;
+    }
+
+    /* PROJETO 4 */
+
+    #proj4_title {
+        grid-area: 44 / 1 / span 1 / span 2;
+    }
+
+    #proj4_img {
+        grid-area: 44 / 1 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj4_img {
+        position: relative;
+        width: 200px;
+        height: 137px;
+    }
+
+    /* PROJETO 5 */
+
+    #proj5_title {
+        grid-area: 51 / 1 / span 1 / span 2;
+    }
+
+    #proj5_img {
+        grid-area: 51 / 1 / span 1 / span 2;
+        z-index: -1;
+    }
+
+    .proj5_img {
+        position: relative;
+        width: 200px;
+        height: 137px;
+    }
+
+    .mais_projetos {
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        color: lightgrey;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    #mais_projetos {
+        grid-area: 57 / 2 / span 1 / span 2;
+    }
+
+
+    /* CONTACTOS */
+
+    .contactos_title {
+        font-family: Poppins, sans-serif;
+        font-size: 40pt;
+        color: white;
+        margin: 0;
+    }
+
+    #contactos_title {
+        grid-area: 60 / 1 / span 2 / span 4;
+    }
+
+    .contactos {
+        font-family: Poppins, sans-serif;
+        font-size: 15pt;
+        font-weight: lighter;
+        color: white;
+        margin: 0;
+    }
+
+    #behance {
+        grid-area: 62 / 2 / span 1 / span 1;
+    }
+
+    .behance > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #linkedin {
+        grid-area: 64 / 2 / span 1 / span 1;
+    }
+
+    .linkedin > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #mail {
+        grid-area: 66 / 2 / span 1 / span 1;
+    }
+
+    .mail > a {
+        text-decoration: none;
+        color: white;
+    }
 }
