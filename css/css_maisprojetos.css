@@ -17,13 +17,13 @@ body {
 }
 
 .menu_logo {
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 1%;
     font-size: 20pt;
 }
 
 .menu_back {
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 70%;
     font-size: 15pt;
     font-weight: lighter;
@@ -39,7 +39,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(10, 75px);
+    grid-template-rows: repeat(9, 75px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     overflow: scroll;
@@ -52,7 +52,7 @@ body {
     font-size: 110pt;
     color: #BFC9D2;
     margin: 0;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .proj_1:hover, .proj_2:hover, .proj_3:hover, .proj_4:hover, .proj_5:hover, .proj_6:hover,
@@ -113,6 +113,7 @@ body {
 .photo2 {
     position: absolute;
     display: flex;
+    margin-top: -3%;
 }
 
 .detalhes2 {
@@ -173,10 +174,72 @@ body {
     grid-area: 7 / 4 / span 1 / span 1;
 }
 
+.detalhes_4 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 50%;
+    opacity: 0;
+}
+
+.photo4 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes4 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 80%;
+}
+
+#proj_4:hover + .detalhes_4 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 /* PROJETO 5 */
 
 #proj_5 {
     grid-area: 7 / 5 / span 1 / span 1;
+}
+
+.detalhes_5 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 54%;
+    opacity: 0;
+}
+
+.photo5 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes5 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 73%;
+}
+
+#proj_5:hover + .detalhes_5 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 /* PROJETO 6 */
@@ -185,10 +248,72 @@ body {
     grid-area: 7 / 6 / span 1 / span 1;
 }
 
+.detalhes_6 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 54%;
+    opacity: 0;
+}
+
+.photo6 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes6 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 73%;
+}
+
+#proj_6:hover + .detalhes_6 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 /* PROJETO 7 */
 
 #proj_7 {
     grid-area: 7 / 7 / span 1 / span 1;
+}
+
+.detalhes_7 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 54%;
+    opacity: 0;
+}
+
+.photo7 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes7 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 73%;
+}
+
+#proj_7:hover + .detalhes_7 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 /* PROJETO 8 */
@@ -197,8 +322,70 @@ body {
     grid-area: 7 / 8 / span 1 / span 1;
 }
 
+.detalhes_8 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 54%;
+    opacity: 0;
+}
+
+.photo8 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes8 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 73%;
+}
+
+#proj_8:hover + .detalhes_8 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 /* PROJETO 9 */
 
 #proj_9 {
     grid-area: 7 / 9 / span 1 / span 1;
+}
+
+.detalhes_9 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 54%;
+    opacity: 0;
+}
+
+.photo9 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes9 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 73%;
+}
+
+#proj_9:hover + .detalhes_9 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
