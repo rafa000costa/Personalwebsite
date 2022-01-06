@@ -26,10 +26,11 @@ body {
         margin-top: 1.5%;
         margin-left: 55%;
         font-size: 13pt;
+        font-weight: lighter;
     }
 
     .menu > .menu_sobre > a:hover {
-        border-bottom: 4px solid #BFC9D2;
+        border-bottom: 3px solid #BFC9D2;
         padding-bottom: 5px;
         transition: 0.2s ease-in-out;
     }
@@ -38,10 +39,11 @@ body {
         margin-top: 1.5%;
         margin-left: 4%;
         font-size: 13pt;
+        font-weight: lighter;
     }
 
     .menu > .menu_proj > a:hover {
-        border-bottom: 4px solid #BFC9D2;
+        border-bottom: 3px solid #BFC9D2;
         padding-bottom: 5px;
         transition: 0.2s ease-in-out;
     }
@@ -50,10 +52,11 @@ body {
         margin-top: 1.5%;
         margin-left: 4%;
         font-size: 13pt;
+        font-weight: lighter;
     }
 
     .menu > .menu_cont > a:hover {
-        border-bottom: 4px solid #BFC9D2;
+        border-bottom: 3px solid #BFC9D2;
         padding-bottom: 5px;
         transition: 0.2s ease-in-out;
     }
@@ -76,7 +79,7 @@ body {
     }
 
     #homepage {
-        grid-area: 1 / 1 / span 9 / span 9;        /*primeiro linha segundo coluna*/
+        grid-area: 1 / 1 / span 1 / span 1;       
     }
 
     .flip {
@@ -104,6 +107,10 @@ body {
 
 
     /* SOBRE */
+
+    #sobre {
+        grid-area: 10 / 1 / span 1 / span 1;
+    }
 
     .sobre_title {
         font-family: Poppins, sans-serif;
@@ -385,6 +392,10 @@ body {
 
 
     /* CONTACTOS */
+
+    #contactos {
+        grid-area: 59 / 1 / span 1 / span 1;
+    }
 
     .contactos_title {
         font-family: Poppins, sans-serif;
