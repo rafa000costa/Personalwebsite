@@ -873,6 +873,7 @@ body {
         font-weight: lighter;
         font-size: 10pt;
         color: white;
+        width: 60%;
     }
 
     #sobre_paragraph {
@@ -941,7 +942,7 @@ body {
     /* PROJETO 3 */
 
     #proj3_title {
-        grid-area: 40 / 1 / span 1 / span 2;
+        grid-area: 41 / 1 / span 1 / span 2;
     }
 
     #proj3_img {
@@ -951,8 +952,8 @@ body {
 
     .proj3_img {
         position: relative;
-        width: 275px;
-        height: 300px;
+        width: 350px;
+        height: 375px;
     }
 
     /* PROJETO 4 */
