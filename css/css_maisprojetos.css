@@ -60,6 +60,8 @@ body {
     transform: scale(1.5);
 }
 
+/* PROJETO 1 */
+
 #proj_1 {
     grid-area: 7 / 1 / span 1 / span 1;
 }
@@ -72,6 +74,7 @@ body {
     margin-left: 25%;
     width: 50%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo1 {
@@ -91,7 +94,7 @@ body {
 
 #proj_1:hover + .detalhes_1 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 2 */
@@ -108,6 +111,7 @@ body {
     margin-left: 18%;
     width: 50%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo2 {
@@ -128,7 +132,7 @@ body {
 
 #proj_2:hover + .detalhes_2 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 3 */
@@ -145,6 +149,7 @@ body {
     margin-left: 25%;
     width: 50%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo3 {
@@ -165,7 +170,7 @@ body {
 
 #proj_3:hover + .detalhes_3 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 4 */
@@ -182,6 +187,7 @@ body {
     margin-left: 18%;
     width: 50%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo4 {
@@ -202,7 +208,7 @@ body {
 
 #proj_4:hover + .detalhes_4 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 5 */
@@ -219,6 +225,7 @@ body {
     margin-left: 18%;
     width: 54%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo5 {
@@ -239,7 +246,7 @@ body {
 
 #proj_5:hover + .detalhes_5 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 6 */
@@ -256,6 +263,7 @@ body {
     margin-left: 18%;
     width: 54%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo6 {
@@ -276,7 +284,7 @@ body {
 
 #proj_6:hover + .detalhes_6 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 7 */
@@ -293,6 +301,7 @@ body {
     margin-left: 18%;
     width: 54%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo7 {
@@ -313,7 +322,7 @@ body {
 
 #proj_7:hover + .detalhes_7 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 8 */
@@ -330,6 +339,7 @@ body {
     margin-left: 18%;
     width: 54%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo8 {
@@ -350,7 +360,7 @@ body {
 
 #proj_8:hover + .detalhes_8 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }
 
 /* PROJETO 9 */
@@ -367,6 +377,7 @@ body {
     margin-left: 18%;
     width: 54%;
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .photo9 {
@@ -387,5 +398,5 @@ body {
 
 #proj_9:hover + .detalhes_9 {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease-in-out;
 }

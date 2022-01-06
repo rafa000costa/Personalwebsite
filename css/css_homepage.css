@@ -159,25 +159,25 @@ body {
         height: 350px;
         top: 0;
         left: 0;
-        /*background-color: rgba(0, 0, 0, 1);*/
-        background-color: salmon;
-        color: white;
-        font-family: Poppins, sans-serif;
-        font-weight: lighter;
-        font-size: 15pt;
+        background-color: rgba(0, 0, 0, 1);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 2px solid red;
         opacity: 0;
+        transition: opacity 0.1s ease-in-out;
     }
 
-    .proj1_overlay:hover {
+    .proj1_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj1_title:hover + .proj1_img > .proj1_overlay{
         opacity: 1;
-        background-color: rgba(0, 0, 0, 1);
-        border: 2px solid red;
-        z-index: 100;
+        transition: opacity 0.1s ease-in-out;
     }
 
     /* PROJETO 2 */
@@ -201,24 +201,25 @@ body {
         height: 375px;
         top: 0;
         left: 0;
-        /*background-color: rgba(0, 0, 0, 1);*/
-        background-color: salmon;
-        color: white;
-        font-family: Poppins, sans-serif;
-        font-weight: lighter;
-        font-size: 15pt;
+        background-color: rgba(0, 0, 0, 1);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 2px solid red;
         opacity: 0;
+        transition: opacity 0.1s ease-in-out;
     }
 
-    .proj2_overlay:hover {
+    .proj2_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj2_title:hover + .proj2_img > .proj2_overlay{
         opacity: 1;
-        z-index: 100;
-        border: 2px solid red;
+        transition: opacity 0.1s ease-in-out;
     }
 
     /* PROJETO 3 */
@@ -232,6 +233,37 @@ body {
         z-index: -1;
     }
 
+    .proj3_img {
+        position: relative;
+    }
+
+    .proj3_overlay {
+        position: absolute;
+        width: 350px;
+        height: 400px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj3_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj3_title:hover + .proj3_img > .proj3_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+    }
+
     /* PROJETO 4 */
 
     #proj4_title {
@@ -243,6 +275,37 @@ body {
         z-index: -1;
     }
 
+    .proj4_img {
+        position: relative;
+    }
+
+    .proj4_overlay {
+        position: absolute;
+        width: 500px;
+        height: 375px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj4_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj4_title:hover + .proj4_img > .proj4_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+    }
+
     /* PROJETO 5 */
 
     #proj5_title {
@@ -252,6 +315,37 @@ body {
     #proj5_img {
         grid-area: 51 / 6 / span 1 / span 2;
         z-index: -1;
+    }
+
+    .proj5_img {
+        position: relative;
+    }
+
+    .proj5_overlay {
+        position: absolute;
+        width: 500px;
+        height: 375px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj5_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj5_title:hover + .proj5_img > .proj5_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
     }
 
     .mais_projetos {
