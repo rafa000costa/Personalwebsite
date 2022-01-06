@@ -17,13 +17,13 @@ body {
 }
 
 .menu_logo {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 1%;
     font-size: 20pt;
 }
 
 .menu_back {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 70%;
     font-size: 15pt;
     font-weight: lighter;
@@ -64,58 +64,140 @@ body {
     grid-area: 7 / 1 / span 1 / span 1;
 }
 
-.photo {
+.detalhes_1 {
+    display: flex;
+    flex-direction: row;
     position: absolute;
-    overflow: hidden;
-    border-radius: 3px;
-    visibility: hidden;
-    transform: scale(0.6);
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 50%;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
-.photo > img {
+.photo1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
+    display: flex;
 }
 
-.photo.active {
-    visibility: visible;
-    transform: scale(1);
-    opacity: 1;
+.detalhes1 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 60%;
 }
+
+#proj_1:hover + .detalhes_1 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* PROJETO 2 */
 
 #proj_2 {
     grid-area: 7 / 2 / span 1 / span 1;
 }
 
+.detalhes_2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 18%;
+    width: 50%;
+    opacity: 0;
+}
+
+.photo2 {
+    position: absolute;
+    display: flex;
+}
+
+.detalhes2 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 80%;
+}
+
+#proj_2:hover + .detalhes_2 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* PROJETO 3 */
+
 #proj_3 {
     grid-area: 7 / 3 / span 1 / span 1;
 }
+
+.detalhes_3 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 50%;
+    opacity: 0;
+}
+
+.photo3 {
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+}
+
+.detalhes3 {
+    display: flex;
+    flex-direction: column;
+    color: #BFC9D2;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 60%;
+}
+
+#proj_3:hover + .detalhes_3 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* PROJETO 4 */
 
 #proj_4 {
     grid-area: 7 / 4 / span 1 / span 1;
 }
 
+/* PROJETO 5 */
+
 #proj_5 {
     grid-area: 7 / 5 / span 1 / span 1;
 }
+
+/* PROJETO 6 */
 
 #proj_6 {
     grid-area: 7 / 6 / span 1 / span 1;
 }
 
+/* PROJETO 7 */
+
 #proj_7 {
     grid-area: 7 / 7 / span 1 / span 1;
 }
 
+/* PROJETO 8 */
+
 #proj_8 {
     grid-area: 7 / 8 / span 1 / span 1;
 }
+
+/* PROJETO 9 */
 
 #proj_9 {
     grid-area: 7 / 9 / span 1 / span 1;
