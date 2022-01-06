@@ -455,30 +455,30 @@ body {
         position: fixed;
         width: 100%;
         height: 10%;
-        margin-top: -10px;
         z-index: 1;
+        margin-top: 0;
     }
 
     .menu_logo {
-        margin-top: 2%;
+        margin-top: -10%;
         margin-left: 1%;
-        font-size: 15pt;
+        font-size: 10pt;
     }
 
     .menu_sobre {
-        margin-top: 3%;
-        margin-left: 40%;
+        margin-top: 1.5%;
+        margin-left: 55%;
         font-size: 8pt;
     }
 
     .menu_proj {
-        margin-top: 3%;
+        margin-top: 1.5%;
         margin-left: 4%;
         font-size: 8pt;
     }
 
     .menu_cont {
-        margin-top: 3%;
+        margin-top: 1.5%;
         margin-left: 4%;
         font-size: 8pt;
     }
@@ -492,7 +492,7 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(66, 75px);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
