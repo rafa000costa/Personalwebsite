@@ -701,6 +701,33 @@ body {
         height: 300px;
     }
 
+    .proj3_overlay {
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj3_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj3_title:hover + .proj3_img > .proj3_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+    }
+
     /* PROJETO 4 */
 
     #proj4_title {
@@ -945,7 +972,7 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(66, 75px);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
@@ -1031,7 +1058,7 @@ body {
 
     .proj_title {
         font-family: Poppins, sans-serif;
-        font-size: 40pt;
+        font-size: 30pt;
         color: #BFC9D2;
         margin: 0;
     }
@@ -1039,7 +1066,7 @@ body {
     /* PROJETO 1 */
 
     #proj1_title {
-        grid-area: 23 / 1 / span 1 / span 2;
+        grid-area: 26 / 1 / span 1 / span 2;
     }
 
     #proj1_img {
@@ -1049,8 +1076,35 @@ body {
 
     .proj1_img {
         position: relative;
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .proj1_overlay {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj1_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj1_title:hover + .proj1_img > .proj1_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
     }
 
     /* PROJETO 2 */
@@ -1070,6 +1124,33 @@ body {
         height: 287px;
     }
 
+    .proj2_overlay {
+        position: absolute;
+        width: 350px;
+        height: 287px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj2_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj2_title:hover + .proj2_img > .proj2_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+    }
+
     /* PROJETO 3 */
 
     #proj3_title {
@@ -1085,6 +1166,33 @@ body {
         position: relative;
         width: 350px;
         height: 375px;
+    }
+
+    .proj3_overlay {
+        position: absolute;
+        width: 350px;
+        height: 375px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj3_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj3_title:hover + .proj3_img > .proj3_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
     }
 
     /* PROJETO 4 */
@@ -1104,6 +1212,33 @@ body {
         height: 287px;
     }
 
+    .proj4_overlay {
+        position: absolute;
+        width: 350px;
+        height: 287px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj4_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj4_title:hover + .proj4_img > .proj4_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
+    }
+
     /* PROJETO 5 */
 
     #proj5_title {
@@ -1119,6 +1254,33 @@ body {
         position: relative;
         width: 350px;
         height: 287px;
+    }
+
+    .proj5_overlay {
+        position: absolute;
+        width: 350px;
+        height: 287px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .proj5_overlay > p {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+    }
+
+    #proj5_title:hover + .proj5_img > .proj5_overlay{
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
     }
 
     .mais_projetos {
